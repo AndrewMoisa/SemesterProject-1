@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  padding: 15px 0px;
 }
 
 .nav-container,
@@ -11,30 +12,35 @@ header {
   display: none;
 }
 
-#menu-checkbox:checked ~ .navContainer {
+#menu-checkbox:checked ~ .nav-container {
   display: block;
 }
 
 .nav-container {
   position: absolute;
   z-index: 99;
-  top: 30px;
-  right: 30px;
+  top: 50px;
+  right: 15px;
+  /* background-color: black; */
 }
 
 .nav-menu a {
   display: block;
   color: white;
+  background-color: black;
   padding: 10px 20px;
-  text-transform: uppercase;
   text-decoration: none;
+}
+.nav-menu a:hover {
+  color: #00adb5;
+  transition: 500ms ease-in;
 }
 .hamburger-menu {
   color: white;
 }
 
 .nav-logo img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -55,7 +61,6 @@ header {
     color: white;
   }
   .nav-logo img {
-    width: 70%;
     margin-left: 10px;
   }
 }

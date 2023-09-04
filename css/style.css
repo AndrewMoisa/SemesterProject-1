@@ -31,7 +31,14 @@
   font-weight: 700;
   font-size: 1.625rem;
 }
-
+.line-break {
+  display: block;
+}
+.h1color {
+  text-align: center;
+  font-weight: 700;
+  color: var(--cyan);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -66,6 +73,10 @@
   color: white;
   -webkit-text-stroke: 1px black;
 }
+.primarybtn:hover {
+  background-color: #00adb5;
+  transition: 500ms ease-in;
+}
 
 body {
   margin: 0 auto;
@@ -92,12 +103,6 @@ body {
   align-items: center;
 }
 
-.overtext h1 {
-  text-align: center;
-  font-weight: 700;
-  color: var(--cyan);
-}
-
 .overtext p {
   color: white;
   max-width: 30rem;
@@ -111,16 +116,14 @@ body {
 }
 
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   width: 81.25rem;
+  height: 28.5rem;
   padding: 1.56rem;
   gap: 3rem;
   margin: 10px 0px;
-}
-
-.card h2 {
-  text-align: center;
-  color: var(--cyan);
 }
 
 .card p {
@@ -128,8 +131,7 @@ body {
 }
 
 .card img {
-  width: 50%;
-  border-radius: 100px;
+  max-width: 95%;
 }
 
 .text-card {
@@ -157,7 +159,156 @@ body {
   padding-bottom: 2rem;
 }
 
+/* EXPLORE  */
+.forkids-h1 {
+  margin: 0px;
+}
+
 footer {
   background-color: #000;
   color: white;
+}
+
+/* VISIT */
+.visit-main1,
+.visit-main2,
+.visit-main3 {
+  text-align: center;
+}
+.visit-main1 {
+  grid-area: main1;
+}
+
+.visit-main2 {
+  grid-area: main2;
+}
+
+.visit-main3 {
+  grid-area: main3;
+}
+
+.visit-side {
+  grid-area: side;
+}
+
+.visit-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: auto;
+  gap: 50px;
+  grid-template-areas:
+    "main1 main2 main3"
+    ". side .";
+}
+
+.visit-side p {
+  text-align: center;
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .card {
+    height: 27rem;
+  }
+  .nav-container {
+    font-size: 1.25rem;
+  }
+  .h1size {
+    font-size: 2rem;
+  }
+  .psize {
+    font-size: 1.3rem;
+  }
+  .bolded {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroimg {
+    min-height: 23rem;
+  }
+  .card {
+    height: 23.5rem;
+  }
+  .card img {
+    max-width: 100%;
+  }
+  .nav-container {
+    font-size: 1.2rem;
+  }
+  .h1size {
+    font-size: 1.7rem;
+  }
+  .psize {
+    font-size: 1rem;
+  }
+  .bolded {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header {
+    padding: 10px 15px;
+  }
+  .overtext p {
+    max-width: 20rem;
+    margin-top: 110px;
+  }
+  .nav-logo img {
+    max-width: 50%;
+  }
+  .heroimg {
+    min-height: 18rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding: 0px;
+    overflow: hidden;
+    gap: 28px;
+    /* padding: 10px 10px; */
+  }
+  .card-style-mobile {
+    flex-direction: column;
+  }
+  .text-card {
+    padding: 0px 0px;
+  }
+  .text-card a {
+    margin-top: 0px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .h1size {
+    font-size: 1.5rem;
+    margin: 20px 0px 0px 0px;
+  }
+  .psize {
+    font-size: 0.9rem;
+  }
+  .primarybtn {
+    padding: 0.25rem 1rem;
+  }
+  .bolded {
+    font-size: 0.7rem;
+  }
+  .footer-p-size {
+    font-size: 0.6rem;
+  }
+  .card-involved h3,
+  .card-involved p {
+    margin: 0rem 0.8rem;
+  }
+  .visit-container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    padding-bottom: 10px;
+  }
 }

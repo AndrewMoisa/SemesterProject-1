@@ -4,6 +4,9 @@
 }
 .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 20px;
+}
+.line-height0 {
+  margin: 0px;
 }
