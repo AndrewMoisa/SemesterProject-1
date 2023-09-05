@@ -57,6 +57,8 @@
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* Utility */
+
 /* BUTTONS */
 .primarybtn {
   padding: 0.5rem 3rem;
@@ -77,7 +79,9 @@
   background-color: #00adb5;
   transition: 500ms ease-in;
 }
+/* BUTTONS */
 
+/* INDEX */
 body {
   margin: 0 auto;
   width: 81.25rem;
@@ -247,7 +251,7 @@ footer {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 576px) {
   header {
     padding: 10px 15px;
   }
