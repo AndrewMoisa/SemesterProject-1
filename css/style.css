@@ -262,6 +262,7 @@ footer {
   .overtext p {
     max-width: 20rem;
     margin-top: 110px;
+    padding: 0px 5px;
   }
   .nav-logo img {
     max-width: 50%;
@@ -284,7 +285,7 @@ footer {
     flex-direction: column;
   }
   .text-card {
-    padding: 0px 0px;
+    padding: 0px 5px;
   }
   .text-card a {
     margin-top: 0px;
@@ -315,6 +316,7 @@ footer {
   .visit-container {
     display: flex;
     flex-direction: column;
+    padding: 0px 5px;
   }
   footer {
     padding-bottom: 10px;
