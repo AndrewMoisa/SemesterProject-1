@@ -4,7 +4,7 @@
 :root {
   --bgcolor: #eeeeee;
   --secondarybg: #222831;
-  --cyan: #00adb5;
+  --cyan: #00575c;
   --darkgrey: #393e46;
 }
 
@@ -199,7 +199,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row: auto;
-  align-items: center;
   gap: 50px;
   grid-template-areas:
     "main1 main2 main3"
@@ -215,9 +214,6 @@ footer {
 
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (max-width: 1024px) {
-  .card {
-    /* height: 27rem; */
-  }
   .nav-container {
     font-size: 1.25rem;
   }
@@ -236,9 +232,7 @@ footer {
   .heroimg {
     min-height: 23rem;
   }
-  .card {
-    /* height: 23.5rem; */
-  }
+
   .card img {
     max-width: 100%;
   }
