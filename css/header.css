@@ -12,10 +12,12 @@ header {
   display: none;
 }
 
-#menu-checkbox:checked ~ .nav-container {
+/* #menu-checkbox:checked ~ .nav-container {
+  display: block;
+} */
+.toggle-mobile {
   display: block;
 }
-
 .nav-container {
   position: absolute;
   z-index: 99;
