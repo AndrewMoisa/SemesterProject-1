@@ -1,14 +1,14 @@
-# Science Community Museum
+# Community Science Museum
 
 <p align="left"><img height="400px" src="https://github.com/user-attachments/assets/5a38b5de-8add-4566-8656-dffd41760bc5" alt="home page" /></p>
 
-[Live Demo: Science Community Museum](https://am-csm.netlify.app)
+[Live Demo: Community Science Museum](https://am-csm.netlify.app)
 
 ---
 
 ## Project Overview
 
-Welcome to **Science Community Museum**, a web platform designed to engage and educate visitors about scientific concepts, exhibits, and events. The website features a visually appealing design tailored to attract and inform our target audience, fostering a community of science enthusiasts.
+Welcome to **Community Science Museum**, a web platform designed to engage and educate visitors about scientific concepts, exhibits, and events. The website features a visually appealing design tailored to attract and inform our target audience, fostering a community of science enthusiasts.
 
 The project adheres to web design best practices, focusing on accessibility, responsiveness, and user experience. With a modern design and organized content, this site serves as a valuable resource for individuals interested in science and technology.
 
